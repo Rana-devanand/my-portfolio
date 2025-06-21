@@ -26,7 +26,6 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen py-12 px-4">
-
       <div className="max-w-6xl mx-auto">
         <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20 overflow-hidden">
           <div className="text-center py-8 px-8">
@@ -153,7 +152,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">Email Us</h4>
-                    <p className="text-gray-300">contact@company.com</p>
+                    <p className="text-gray-300">devanandrana168@gmail.com</p>
                     <p className="text-gray-400 text-sm">
                       We`ll respond within 24 hours
                     </p>
@@ -166,7 +165,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">Call Us</h4>
-                    <p className="text-gray-300">+1 (555) 123-4567</p>
+                    <p className="text-gray-300">+91 9304266642</p>
                     <p className="text-gray-400 text-sm">
                       Mon-Fri, 9AM-6PM EST
                     </p>
@@ -179,8 +178,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">Visit Us</h4>
-                    <p className="text-gray-300">123 Business Street</p>
-                    <p className="text-gray-300">New York, NY 10001</p>
+                    <p className="text-gray-300">Sas nagar mohali sector 90, Lakhnaur</p>
+                    <p className="text-gray-300">Chandigarh India</p>
                   </div>
                 </div>
               </div>
