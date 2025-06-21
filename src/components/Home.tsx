@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, Rocket, Heart, Code, Database, Server, Award, MapPin, Phone, Mail, Calendar, ExternalLink, Github, Linkedin } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 const Portfolio = () => {
   const skills = [
@@ -76,6 +77,8 @@ const Portfolio = () => {
     "REST API", "Prisma ORM", "Material UI", "AWS", "Git", "GitHub", "JEST", "Jira"
   ];
 
+const router = useRouter()
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -111,14 +114,18 @@ const Portfolio = () => {
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
-                    <Github className="h-5 w-5" />
-                    GitHub Profile
-                  </button>
+                      <a href="https://github.com/Rana-devanand">
+                    <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
+                          <Github className="h-5 w-5" />
+                          GitHub Profile
+                    </button>
+                      </a>
+                  <a href="https://www.linkedin.com/in/devanand-rana-18707b1a0">
                   <button className="bg-white/10 hover:bg-white/20 border border-white/30 hover:border-white/50 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 backdrop-blur-sm flex items-center justify-center gap-2">
                     <Linkedin className="h-5 w-5" />
                     LinkedIn
                   </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -267,12 +274,14 @@ const Portfolio = () => {
             Let`s discuss your next project and create something amazing together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl">
+            <button onClick={() => router.push("/contact")} className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl">
               Contact Me
             </button>
+            <a href="/resume.pdf" download>
             <button className="bg-white/10 hover:bg-white/20 border border-white/30 hover:border-white/50 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 backdrop-blur-sm">
               Download Resume
             </button>
+            </a>
           </div>
         </div>
       </div>
