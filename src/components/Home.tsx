@@ -114,17 +114,17 @@ const router = useRouter()
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
-                      <a href="https://github.com/Rana-devanand">
-                    <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
-                          <Github className="h-5 w-5" />
-                          GitHub Profile
+                  <a href="https://github.com/Rana-devanand" className="w-full sm:w-auto">
+                    <button className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
+                      <Github className="h-5 w-5" />
+                      GitHub Profile
                     </button>
-                      </a>
-                  <a href="https://www.linkedin.com/in/devanand-rana-18707b1a0">
-                  <button className="bg-white/10 hover:bg-white/20 border border-white/30 hover:border-white/50 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 backdrop-blur-sm flex items-center justify-center gap-2">
-                    <Linkedin className="h-5 w-5" />
-                    LinkedIn
-                  </button>
+                  </a>
+                  <a href="https://www.linkedin.com/in/devanand-rana-18707b1a0" className="w-full sm:w-auto">
+                    <button className="w-full bg-white/10 hover:bg-white/20 border border-white/30 hover:border-white/50 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 backdrop-blur-sm flex items-center justify-center gap-2">
+                      <Linkedin className="h-5 w-5" />
+                      LinkedIn
+                    </button>
                   </a>
                 </div>
               </div>
